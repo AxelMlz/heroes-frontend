@@ -39,10 +39,10 @@ export default function Search() {
 console.log(selectHeroes)
 
   return (
-    <div>
-    <h2> search </h2>  
+    <div >
+        
     <> 
-        <h1 className="text-3xl font-bold underline p-10">Search a hero :</h1>
+        <h1 className="text-3xl font-bold underline p-10 ">Search a hero :</h1>
 
         <div >
             
@@ -61,7 +61,7 @@ console.log(selectHeroes)
         
        {selectHeroes && 
        <div class="max-w-sm rounded overflow-hidden shadow-lg p-15">
-            <div class="px-6 py-4">
+            <div class="px-6 py-4 my-15">
 
                 <div class="font-bold text-xl mb-2">{selectHeroes.heroName}</div>
 
@@ -79,13 +79,7 @@ console.log(selectHeroes)
 
 
             </div>
-            <div class="px-6 pt-4 pb-2">
 
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-           
-            </div>
         </div>}
       
     

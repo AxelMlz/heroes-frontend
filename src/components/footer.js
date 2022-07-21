@@ -7,7 +7,9 @@ function Footer() {
     const year = new Date().getFullYear();
 
   return (
-<footer className="text-center text-white bg-red-800">
+
+        <footer className="text-center text-white bg-red-800">
+
 			<div className="flex justify-around py-5">
 				<a
 					href="https://www.linkedin.com/in/Axel-Mélézan/"
@@ -56,6 +58,7 @@ function Footer() {
 			<div className="text-center text-gray-200 p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
 				© {year} Copyright - Axel Mélézan
 			</div>
+
 		</footer>
 	);
   
