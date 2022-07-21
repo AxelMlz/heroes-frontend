@@ -5,6 +5,7 @@ import List from './views/list.js';
 import Homepage from "./views/homepage.js";
 import Search from "./views/search.js";
 import Navbar from './components/navbar.js';
+import Footer from './components/footer.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -27,7 +28,7 @@ function App() {
             <Route path='/search' element={<Search/>}/>
 
           </Routes>
-          
+      <Footer/>
   </Router>
     </div>
 
