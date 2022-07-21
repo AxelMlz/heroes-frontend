@@ -14,7 +14,7 @@ export default function List () {
       fetch("http://localhost:8000/heroes")
           .then((res) => res.json())
           .then((res) => {
-              // console.log(res);
+              console.log(res);
               setHeroes(res);
           });
   }, []);
@@ -28,9 +28,9 @@ return (
 
  <div class="">
 
-   <div className="p-10 grid grid-cols-2 gap-4 flex ...">
+   <div className=" p-4 grid grid-cols-1 gap-1 flex">
 
-        <div className="max-w-md rounded overflow-hidden shadow-lg p-5 flex-1 ...">
+        <div className="max-w-md rounded overflow-hidden shadow-lg p-5 m-15 flex-1 ...">
 
                     <div className="font-bold text-xl mb-2">{hero.heroName} </div>
 
@@ -39,22 +39,26 @@ return (
                         Power/s : {hero.power.join(', ')}
                       
                         <p>age : {hero.age}</p>
+
+                        <p>Status : {hero.isAlive}</p>
 
                     </div>
 
         </div>
-        
-        <div className="max-w-md rounded overflow-hidden shadow-lg p-5 basis-2/2 md:basis-2/2">
+
+        {/* <div className="max-w-md rounded overflow-hidden shadow-lg p-5 basis-2/2 md:basis-2/2">
                     <div className="font-bold text-xl mb-2">{hero.heroName} </div>
                     <div className="px-6 py-4">
 
                         Power/s : {hero.power.join(', ')}
                       
-                        <p>age : {hero.age}</p>
+                        <p>Age : {hero.age}</p>
 
+                        <p>Status : {hero.isAlive}</p>
+                        
                     </div>
 
-                    {/* <div class="px-6 pt-4 pb-2">
+                    <div class="px-6 pt-4 pb-2">
                         <ul> 
                             {heroes.power.map((i) => { 
                                 return ( 
@@ -64,8 +68,8 @@ return (
                                 }
                             
                         </ul>
-                    </div> */}
-      </div> 
+                    </div>
+      </div>  */}
 
   </div>  
 

@@ -23,7 +23,7 @@ export default function Search() {
             e.preventDefault();
             if (alias) {
               console.log("fetch")
-            fetch(`/heroes/${alias}`)
+            fetch(`http://localhost:8000/heroes/${alias}`)
               .then((res) => res.json())
               .then((res) => {
                 console.log(res)

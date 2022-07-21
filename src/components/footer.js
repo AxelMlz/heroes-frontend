@@ -7,7 +7,7 @@ function Footer() {
     const year = new Date().getFullYear();
 
   return (
-<footer className="text-center text-white bg-gray-800">
+<footer className="text-center text-white bg-red-800">
 			<div className="flex justify-around py-5">
 				<a
 					href="https://www.linkedin.com/in/Axel-Mélézan/"
