@@ -17,10 +17,11 @@ function App() {
   return (
 
     <div> 
-      <h1>Heroes API</h1>
 
   <Router>
+    
       <Navbar/>
+
           <Routes>
 
             <Route exact path='/' element={<Homepage/>}/>
@@ -28,8 +29,11 @@ function App() {
             <Route path='/search' element={<Search/>}/>
 
           </Routes>
+
       <Footer/>
+
   </Router>
+
     </div>
 
   );
